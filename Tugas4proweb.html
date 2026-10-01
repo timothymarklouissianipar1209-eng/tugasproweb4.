@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Pemrograman Web Timothy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+        body { font-family: Arial,sans-serif; background:#f7fcf8; color:#263b2c; }
+        .navbar { background:#e4f3e7!important; border-radius:12px; }
+        .hero { min-height:45vh; padding-top:5px; }
+        .hero h1 { font-family:'Josefin Sans'; color:#315d3d; }
+        .hero img { width:100%; height:350px; object-fit:cover; border-radius:15px; }
+        .btn-success { background:#79a982; border-color:#79a982; }
+        .btn-success:hover { background:#638f6c; border-color:#638f6c; transform:translateY(-2px); }
+        .penjelasan { background:#edf7ef; border-radius:15px; padding:20px; }
+        .penjelasan div { padding:10px; border-left:4px solid #79a982; background:white; border-radius:8px; }
+        .card { border:none; box-shadow:0 4px 12px #dce9de; transition:.2s; }
+        .card:hover { transform:translateY(-4px); }
+        footer { background:#e4f3e7; }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">Proweb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Dropdown</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">HTML</a></li>
+                            <li><a class="dropdown-item" href="#">CSS</a></li>
+                            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link disabled">Disabled</a></li>
+                </ul>
+
+                <form class="d-flex gap-2">
+                    <input class="form-control" type="search" placeholder="Search">
+                    <button class="btn btn-outline-success">Search</button>
+                    <a href="#" class="btn btn-outline-primary">Masuk</a>
+                    <a href="#" class="btn btn-primary">Daftar</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container">
+        <div class="row align-items-center hero">
+            <div class="col-md-6">
+                <h1>Hai!<br>Selamat Datang di Proweb</h1>
+                <p>Belajar Pemrograman Web mulai dari HTML, CSS, dan Bootstrap.</p>
+                <a href="#belajar" class="btn btn-success">Mulai Belajar</a>
+            </div>
+
+            <div class="col-md-6 text-center">
+                <img src="./IMG_9157.PNG" alt="Foto Proweb">
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-3">
+        <div class="penjelasan">
+            <h2 class="text-center mb-4">Dasar Pemrograman Web</h2>
+
+            <div class="mb-3">
+                <h5>HTML</h5>
+                <p>HTML digunakan untuk membuat struktur dasar halaman web, seperti judul, paragraf, gambar, tombol, dan elemen utama website.</p>
+            </div>
+
+            <div class="mb-3">
+                <h5>CSS</h5>
+                <p>CSS digunakan untuk mengatur tampilan halaman web, seperti warna, ukuran tulisan, jarak, posisi, dan tata letak website.</p>
+            </div>
+
+            <div>
+                <h5>Bootstrap</h5>
+                <p>Bootstrap adalah framework CSS dengan komponen siap pakai untuk membuat website lebih cepat, rapi, dan responsif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="belajar" class="container py-4">
+        <div class="text-center mb-4">
+            <h2>Materi Pembelajaran</h2>
+            <p>Pelajari dasar-dasar pemrograman web.</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h5>HTML</h5>
+                    <p>Belajar struktur dasar halaman web.</p>
+                    <a href="#" class="btn btn-success">Pelajari</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h5>CSS</h5>
+                    <p>Belajar membuat tampilan web lebih menarik.</p>
+                    <a href="#" class="btn btn-success">Pelajari</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card p-3 h-100">
+                    <h5>Bootstrap</h5>
+                    <p>Belajar membuat website yang responsif.</p>
+                    <a href="#" class="btn btn-success">Pelajari</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>© 2026 Proweb | Belajar Pemrograman Web</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
